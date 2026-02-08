@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-pink: #FF69B4;
+  --color-primary-purple: #4B0082;
+  --color-accent-pink: #FFB6C1;
+  --font-inter: "Inter", sans-serif;
+}
+
+:root {
+  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #1a1a1a;
+  background-color: #ffffff;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-primary-purple);
+  font-weight: 700;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-primary {
+  @apply bg-primary-pink text-white px-6 py-3 rounded-full font-bold transition-all hover:scale-105 active:scale-95 shadow-lg;
+}
+
+.btn-secondary {
+  @apply bg-primary-purple text-white px-6 py-3 rounded-full font-bold transition-all hover:scale-105 active:scale-95 shadow-lg;
+}
